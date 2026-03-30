@@ -8,14 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="form">
-      <textarea id="input" placeholder="Write something..."></textarea>
-      <button type="submit">ENTER</button>
-    </form>
+    <div class="wrapper">
+      <div class="info-box">
+        <h2>Form</h2>
+        <p>Need to get error messages</p>
+        <ul>
+          <li>When no text is entered</li>
+          <li>When number of character is greater than 140</li>
+          <li>Otherwise, message has to be added below</li>
+        </ul>
+      </div>
 
-    <p id="error-msg" style="color: red"></p>
+      <div class="main">
+        <h2>What are you humming about?</h2>
 
-    <div id="container"></div>
+        <form id="form">
+          <textarea id="input" placeholder="Write something..."></textarea>
+
+          <div class="bottom">
+            <button type="submit">ENTER</button>
+            <span id="counter">140</span>
+          </div>
+        </form>
+
+        <p id="error-msg"></p>
+
+        <div id="container"></div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
